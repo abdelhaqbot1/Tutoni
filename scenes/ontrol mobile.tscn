@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://cbhgvghkqeta4"]
+
+[ext_resource type="Texture2D" uid="uid://buvxubue63fvs" path="res://sprites/controls/flatDarkUp.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://bhenl7oc0c28g" path="res://sprites/controls/flatDarkRight.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://bsny3ldkwkdgp" path="res://sprites/controls/flatDarkLeft.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://by2tj6hqahbh2" path="res://sprites/controls/flatDarkDown.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://d3mba3pshlf1m" path="res://sprites/controls/flatDarkA.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://cm2kts5bqkea" path="res://sprites/controls/flatDarkB.png" id="6"]
+
+[node name="ontrol mobile" type="CanvasLayer"]
+
+[node name="up" type="TouchScreenButton" parent="."]
+position = Vector2(1040, 384)
+scale = Vector2(1.2, 1.2)
+texture_normal = ExtResource("1")
+action = "ui_up"
+
+[node name="down" type="TouchScreenButton" parent="."]
+position = Vector2(1040, 576)
+scale = Vector2(1.2, 1.2)
+texture_normal = ExtResource("4")
+action = "ui_down"
+
+[node name="left" type="TouchScreenButton" parent="."]
+position = Vector2(944, 480)
+scale = Vector2(1.2, 1.2)
+texture_normal = ExtResource("3")
+action = "ui_left"
+
+[node name="right" type="TouchScreenButton" parent="."]
+position = Vector2(1136, 480)
+scale = Vector2(1.2, 1.2)
+texture_normal = ExtResource("2")
+action = "ui_right"
+
+[node name="restart" type="TouchScreenButton" parent="."]
+position = Vector2(144, 528)
+scale = Vector2(1.2, 1.2)
+texture_normal = ExtResource("6")
+action = "restart"
+
+[node name="restart all" type="TouchScreenButton" parent="."]
+position = Vector2(144, 400)
+scale = Vector2(1.2, 1.2)
+texture_normal = ExtResource("5")
+action = "restar_all"

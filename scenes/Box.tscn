@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://sprites/tile_0063.png" type="Texture2D" id=1]
+[ext_resource path="res://scripts/Box.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 7, 7 )
+
+[node name="Box" type="CharacterBody2D" groups=["Box"]]
+script = ExtResource( 2 )
+
+[node name="sprite" type="Sprite2D" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 8, 8 )
+target_position = Vector2( 0, 16 )
+
+[node name="Tween" type="Tween" parent="."]
